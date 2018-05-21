@@ -65,11 +65,11 @@
             <!-- use the following artifactId if you don't need servlet 2.x compatibility -->
             <!-- artifactId>jersey-container-servlet</artifactId -->
         </dependency>
-            <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.46</version>
-    </dependency>
+        <dependency>
+     		<groupId>mysql</groupId>
+   	  	  	<artifactId>mysql-connector-java</artifactId>
+  	  	 	<version>5.1.46</version>
+  		</dependency>
         <dependency>
             <groupId>org.glassfish.jersey.inject</groupId>
             <artifactId>jersey-hk2</artifactId>
@@ -78,7 +78,20 @@
             <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-json-binding</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.0.0-M3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>${junit.platform.version}</version>
+        </dependency>
     </dependencies>
+    
+    
     <properties>
         <jersey.version>2.27</jersey.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
